@@ -1,0 +1,16 @@
+@font-face {
+  font-family: inter-reg;
+  src: url('./assets/fonts/inter/Inter-Regular.ttf');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: block;
+  margin: 0;
+  font-family: inter-reg;
+  overflow: hidden;
+}
+

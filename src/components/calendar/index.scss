@@ -1,0 +1,58 @@
+.calendar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% - 4.25rem);
+  padding: 1rem 4rem 2rem 4rem;
+
+  .calendar-box {
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 1px 3px 10px 0px #ddd;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+
+    .selection-box {
+      height: 5rem;
+      width: 100%;
+    }
+
+    .days-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 4rem;
+      width: 100%;
+      border-width: 1px 0;
+      border-color: #ddd;
+      border-style: solid;
+
+      .days-name {
+        width: calc(100% / 7);
+        font-size: 0.85rem;
+        text-align: center;
+        color: #aaa;
+      }
+    }
+    
+    .dates-box {
+      display: flex;
+      flex-wrap: wrap;
+      height: calc(100% - 9rem);
+      width: 100%;
+
+      .dates-num {
+        height: calc(100% / 5);
+        width: calc(100% / 7);
+        padding: 1rem;
+        border: 0.25px solid #ddd;
+
+        &:nth-last-of-type(7) {border-radius: 0 0 0 1rem;}
+        &:nth-of-type(35) {
+          border-radius: 0 0 1rem 0;
+        }
+      }
+    }
+  }
+}
